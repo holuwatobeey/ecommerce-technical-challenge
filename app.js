@@ -8,9 +8,9 @@ const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(router);
-const PORT = process.env.PORT || 5300;
+const port = process.env.PORT || 5300;
 
 
-app.listen(PORT, () => {
-  console.log(`server running on port ${PORT}`)
+app.listen(port, () => {
+  console.log(`server running on port ${port}`)
 });
