@@ -7,6 +7,13 @@ import isAdmin from '../middlewares/isAdmin';
 
 const router = express.Router();
 
+router.get('/api/v1', (req, res) => {
+    res.status(200).json({
+        status: 'Success',
+        message: 'Welcome to My Online Shop Api v1.0.0'
+    });
+});
+
 router.post('/api/v1/users/login', UserController.signIn);
 router.post('/api/v1/users/register', UserController.signUp);
 
