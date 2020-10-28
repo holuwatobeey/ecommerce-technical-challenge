@@ -16,7 +16,7 @@ My online shop is an ecommerce platform.
 API is deployed at [https://my-onlineshop.herokuapp.com/api/v1/](https://my-onlineshop.herokuapp.com/api/v1/)
 
 ### API Documentation
-API is documented at [https://my-onlineshop.herokuapp.com/api-docs](https://my-onlineshop.herokuapp.com/api-docs)
+API is documented at [https://documenter.getpostman.com/view/13274153/TVYJ5x2r](https://documenter.getpostman.com/view/13274153/TVYJ5x2r)
 
 ### API Endpoints
 <table>
