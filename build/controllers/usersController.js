@@ -122,7 +122,7 @@ var UsersController = function () {
                     name: req.body.name,
                     email: req.body.email,
                     password: hash,
-                    role: 1
+                    role: 0
                 };
                 _models2.default.User.create(user).then(function (user) {
                     var token = _jsonwebtoken2.default.sign({

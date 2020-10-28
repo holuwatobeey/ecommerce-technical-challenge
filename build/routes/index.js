@@ -1,7 +1,7 @@
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
-  value: true
+    value: true
 });
 
 var _express = require('express');
@@ -31,6 +31,13 @@ var _isAdmin2 = _interopRequireDefault(_isAdmin);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var router = _express2.default.Router();
+
+router.get('/api/v1', function (req, res) {
+    res.status(200).json({
+        status: 'Success',
+        message: 'Welcome to My Online Shop Api v1.0.0'
+    });
+});
 
 router.post('/api/v1/users/login', _usersController2.default.signIn);
 router.post('/api/v1/users/register', _usersController2.default.signUp);

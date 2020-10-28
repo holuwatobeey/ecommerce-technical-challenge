@@ -96,7 +96,7 @@ class UsersController {
                     name: req.body.name,
                     email: req.body.email,
                     password: hash,
-                    role: 1,
+                    role: 0,
                 };
                 models.User.create(user).then((user) => {
                     var token = jwt.sign({
